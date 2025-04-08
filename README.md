@@ -4,7 +4,9 @@ Python Tool
 import requests
 
 def brute_force_directory(url, wordlist):
+
     with open(wordlist,'r') as f:
+    
         directories = f.read().splitlines()
     
     for directory in directories:
